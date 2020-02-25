@@ -1,5 +1,7 @@
 # game
 
+Web https://f5game.co.kr
+
 ## Project setup
 ```
 yarn install
