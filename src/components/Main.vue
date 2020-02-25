@@ -1,7 +1,7 @@
 <template>
   <v-content>
     <section>
-      <v-parallax :src="MainImage" height="500">
+      <v-parallax :src="MainImage">
         <v-layout
           column
           align-center
@@ -131,6 +131,22 @@
 
   </v-content>
 </template>
+
+<style>
+.v-parallax {
+  height: 500px !important;
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .v-parallax {
+    height: 300px !important;
+  }
+  .v-parallax__image {
+    left: 0 !important;
+  }
+}
+</style>
+
 <script>
 import MainImage from '@/assets/main.jpg'
 import MainImage2 from '@/assets/main2.jpg'

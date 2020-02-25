@@ -1,8 +1,8 @@
 <template>
   <v-content>
     <div class="container">
-      <div class="row">
-        <v-card class="mx-auto" max-width="800">
+      <div class="row pa-3">
+        <v-card>
           <v-img src="https://cdn.vuetifyjs.com/images/cards/sunshine.jpg" height="200px">
             <div class="white--text pa-10 display-3">
               <strong>Privacy Policy</strong>
@@ -30,6 +30,9 @@ This Privacy Policy was last updated on 27.01.2020.
 
 <script>
 export default {
-  name: "privacy"
+  name: "privacy",
+  mounted(){
+    document.getElementsByTagName("html")[0].scrollTop = 0;
+  }
 };
 </script>
