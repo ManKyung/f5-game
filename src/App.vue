@@ -16,6 +16,8 @@
           </div>
         </v-flex>
       </v-layout>
+      <img :src="logoImage" style="width:0px"/>
+      <img :src="memoryImage" style="width:0px"/>
     </v-footer>
   </v-app>
 </template>
@@ -31,11 +33,15 @@ a {
 }
 </style>
 <script>
+import logoImage from '@/assets/f5-jigsaw.jpg'
+import memoryImage from '@/assets/f5-memory.png'
 export default {
   name: "App",
 
   data: () => ({
-    title: "F5 Games"
+    title: "F5 Games",
+    logoImage,
+    memoryImage
   })
 };
 </script>
